@@ -3,6 +3,7 @@
 $width_block: 1200px;
 $center: 0 auto;
 $col-w: #fff;
+$link-menu: #343434;
 .clear {clear: both;}
 
 
@@ -25,6 +26,11 @@ $col-w: #fff;
 				padding-right: 20px;
 				& a {
 					line-height: 90px;
+					color: $link-menu;
+					&:hover {
+						text-decoration: none;
+						color: #929292;
+					}
 				}
 
 			}

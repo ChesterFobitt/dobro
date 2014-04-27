@@ -63,42 +63,48 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 6, ../sass/style.scss */
+/* line 7, ../sass/style.scss */
 .clear {
   clear: both;
 }
 
-/* line 9, ../sass/style.scss */
+/* line 10, ../sass/style.scss */
 .b-wrapp {
   width: 1200px;
   margin: 0 auto;
 }
-/* line 12, ../sass/style.scss */
+/* line 13, ../sass/style.scss */
 .b-wrapp .b-header {
   background: white;
   height: 90px;
 }
-/* line 15, ../sass/style.scss */
+/* line 16, ../sass/style.scss */
 .b-wrapp .b-header .e-logo {
   float: left;
   padding-top: 20px;
   width: 300px;
 }
-/* line 20, ../sass/style.scss */
+/* line 21, ../sass/style.scss */
 .b-wrapp .b-header .b-menu {
   float: right;
   width: 590px;
 }
-/* line 23, ../sass/style.scss */
+/* line 24, ../sass/style.scss */
 .b-wrapp .b-header .b-menu li {
   display: inline-block;
   padding-right: 20px;
 }
-/* line 26, ../sass/style.scss */
+/* line 27, ../sass/style.scss */
 .b-wrapp .b-header .b-menu li a {
   line-height: 90px;
+  color: #343434;
 }
-/* line 32, ../sass/style.scss */
+/* line 30, ../sass/style.scss */
+.b-wrapp .b-header .b-menu li a:hover {
+  text-decoration: none;
+  color: #929292;
+}
+/* line 38, ../sass/style.scss */
 .b-wrapp .b-header .big-head {
   background: url(../i/big.png);
   background-position: top center;
