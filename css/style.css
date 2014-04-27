@@ -64,6 +64,37 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 6, ../sass/style.scss */
-h1 {
-  color: red;
+.clear {
+  clear: both;
+}
+
+/* line 9, ../sass/style.scss */
+.b-wrapp {
+  width: 1200px;
+  margin: 0 auto;
+}
+/* line 12, ../sass/style.scss */
+.b-wrapp .b-header {
+  background: white;
+  height: 90px;
+}
+/* line 15, ../sass/style.scss */
+.b-wrapp .b-header .e-logo {
+  float: left;
+  padding-top: 20px;
+  width: 300px;
+}
+/* line 20, ../sass/style.scss */
+.b-wrapp .b-header .b-menu {
+  float: right;
+  width: 590px;
+}
+/* line 23, ../sass/style.scss */
+.b-wrapp .b-header .b-menu li {
+  display: inline-block;
+  padding-right: 20px;
+}
+/* line 26, ../sass/style.scss */
+.b-wrapp .b-header .b-menu li a {
+  line-height: 90px;
 }

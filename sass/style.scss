@@ -1,8 +1,34 @@
 @import "compass/reset";
 
-$color: red;
+$width_block: 1200px;
+$center: 0 auto;
+$col-w: #fff;
+.clear {clear: both;}
 
 
-h1 {
-	color: $color;
+.b-wrapp {
+	width: $width_block;
+	margin: $center;
+	.b-header {
+		background: $col-w;
+		height: 90px;
+		.e-logo {
+			float: left;
+			padding-top: 20px;
+			width: 300px;
+		}
+		.b-menu {
+			float: right;
+			width: 590px;
+			& li {
+				display: inline-block;
+				padding-right: 20px;
+				& a {
+					line-height: 90px;
+				}
+
+			}
+		}
+	}
 }
+ 
