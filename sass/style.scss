@@ -57,8 +57,8 @@ $link-menu: #343434;
 }
 
 @mixin link_up_text() {
-	font-family: sans-serif, Arial;
-	font-size: 13px;
+	font-family: 'OpenSansBold';
+	font-size: 13.3px;
 	text-transform: uppercase;
 	font-weight: bold;
 }
@@ -74,7 +74,11 @@ $link-menu: #343434;
 	background-position: left center;
 	background-repeat: no-repeat;
 }
-
+@mixin trans() {
+	transition: 0.6s; 
+	-moz-transition: 0.6s;
+	-webkit-transition: 0.6s;
+}
 
 body {font-family:  'OpenSansCondensedLight';}
 .clear {clear: both;}
@@ -82,8 +86,13 @@ body {font-family:  'OpenSansCondensedLight';}
 .b-wrapper {
 	width: $width_block;
 	margin: $center;
+}
 	.b-header {
+		height: 576px;
 		background: $col-w;
+		.i-header {
+			height: 90px;
+		}
 		.e-logo {
 			float: left;
 			margin: 16px 0 0 52px;
@@ -113,7 +122,7 @@ body {font-family:  'OpenSansCondensedLight';}
 			}
 			& ul li {
 				display: inline-block;
-				padding-right: 20px;
+				padding-right: 25px;
 				& a {
 					line-height: 25px;
 					color: $link-menu;
@@ -168,7 +177,7 @@ body {font-family:  'OpenSansCondensedLight';}
 							background: rgba(95, 95, 95, .45) url(../i/e-video-but.png);
 							background-repeat: no-repeat;
 							background-position: center center;
-							transition: 0.3s;
+							@include trans;
 							@include center-block;
 							cursor: pointer;
 
@@ -178,7 +187,7 @@ body {font-family:  'OpenSansCondensedLight';}
 								background: rgba(95, 95, 95, .45) url(../i/e-video-but-hover.png);
 								background-repeat: no-repeat;
 								background-position: center center;
-								transition: 0.3s;
+								@include trans;
 							}
 						}
 				}
@@ -187,5 +196,63 @@ body {font-family:  'OpenSansCondensedLight';}
 			}
 		}
 	}
-}
+	.b-content {
+		.b-type {
+			padding: 45px 0;
+			margin: 0 52px; 
+			& h1 {
+				color: $col-bl;
+				font-size: 33px;
+			}
+			.i-all-types {
+				overflow: hidden;
+				height: 260px;
+				margin: 20px auto;
+
+				.e-item-type {
+					width: 215px;
+					height: 255px;
+					text-align: center;
+					float: left;
+					margin-right: 70px;
+					background: url(../i/cyrcle.png);
+					background-position: top center;
+					background-repeat: no-repeat;
+					cursor: pointer;
+					&:nth-last-child(1) {
+						margin-right: 0;
+					}
+					&:hover {
+						background: url(../i/cyrcle-hover.png);
+						background-position: top center;
+						background-repeat: no-repeat;
+					}
+					p {
+						text-align: center;
+						width: 165px;
+						margin: 20px auto 0;
+					}
+
+					p a {
+						color: #929292;
+						@include link_up_text;
+
+					}
+
+					.e-img-types {
+						height: 151px;
+						position: relative;
+						& img {
+							@include center-block;
+						}
+
+					}
+				}
+			}
+
+
+		}
+	}
+
+	
  
