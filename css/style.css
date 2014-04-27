@@ -98,3 +98,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .b-wrapp .b-header .b-menu li a {
   line-height: 90px;
 }
+/* line 32, ../sass/style.scss */
+.b-wrapp .b-header .big-head {
+  background: url(../i/big.png);
+  background-position: top center;
+  width: 1200px;
+  height: 486px;
+}
