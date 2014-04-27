@@ -6,6 +6,20 @@ $col-w: #fff;
 $col-bl: #06aded;
 $link-menu: #343434;
 
+@mixin center-block() {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+}
+@mixin i-wh-all(){
+	width: 312px;
+	height: 312px;
+	position: relative;
+}
+
 @mixin link_up_text() {
 	font-family: sans-serif, Arial;
 	font-size: 13px;
@@ -64,8 +78,8 @@ body {font-family: sans-serif, Arial;}
 			width: $width_block;
 			height: 486px;
 			position: relative;
-			div {
-				width: 504px;
+			.b-video-e-text {
+				width: 490px;
 				border-bottom:1px solid $col-bl ;
 				padding: 45px 0 5px 0;
 				margin: 0 52px;
@@ -78,11 +92,44 @@ body {font-family: sans-serif, Arial;}
 					text-decoration: none;
 				}
 			}
-				h1 {
-					font-size: 52px;
-					color: $col-w;
-					margin-bottom:  20px;
+			h1 {
+				font-size: 52px;
+				color: $col-w;
+				margin-bottom:  20px;
+			}
+			.b-batton-play {
+				width: 312px;
+				height: 312px;
+				border-radius: 50%;
+				background: rgba(95, 95, 95, .45);
+				@include center-block;
+				
+				.i-rel-wh-all {
+					@include i-wh-all;
+						
+						.e-cyrcle-min {
+							width: 149px;
+							height: 149px;
+							border-radius: 50%;
+							background: rgba(95, 95, 95, .45) url(../i/e-video-but.png);
+							background-repeat: no-repeat;
+							background-position: center;
+							transition: 0.3s;
+							@include center-block;
+							cursor: pointer;
+							&:hover {
+								width: 199px;
+								height: 199px;
+								background: rgba(95, 95, 95, .45) url(../i/e-video-but-hover.png);
+								background-repeat: no-repeat;
+								background-position: center;
+								transition: 0.3s;
+							}
+						}
 				}
+
+
+			}
 		}
 	}
 }
