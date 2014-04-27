@@ -1,5 +1,41 @@
 @import "compass/reset";
 
+/* ---------- FONT ---------- */ 
+
+@font-face {    
+    font-family:  'OpenSansBold';
+    src:  url('opensans-bold.eot');
+    src:  url('opensans-bold.eot?#iefix') format('embedded-opentype'),
+         url('opensans-bold.woff') format('woff'),
+         url('opensans-bold.ttf') format('truetype');
+    font-weight:  bold;
+    font-style:  normal;
+}
+
+
+@font-face {    
+    font-family:  'OpenSansCondensedLight';
+    src:  url('opensans-light.eot');
+    src:  url('opensans-light.eot?#iefix') format('embedded-opentype'),
+         url('opensans-light.woff') format('woff'),
+         url('opensans-light.ttf') format('truetype'),
+         url('opensans-light.svg#OpenSansCondensedLight') format('svg');
+    font-weight:  normal;
+    font-style:  normal;
+}
+
+
+@font-face {
+    font-family:  'OpenSansItalic';
+    src:  url('opensans-italic.eot');
+    src:  url('opensans-italic.eot?#iefix') format('embedded-opentype'),
+         url('opensans-italic.woff') format('woff'),
+         url('opensans-italic.ttf') format('truetype');
+    font-weight:  normal;
+}
+
+
+
 $width_block: 1200px;
 $center: 0 auto;
 $col-w: #fff;
@@ -40,7 +76,7 @@ $link-menu: #343434;
 }
 
 
-body {font-family: sans-serif, Arial;}
+body {font-family:  'OpenSansCondensedLight';}
 .clear {clear: both;}
 
 .b-wrapper {
@@ -48,20 +84,38 @@ body {font-family: sans-serif, Arial;}
 	margin: $center;
 	.b-header {
 		background: $col-w;
-		height: 90px;
 		.e-logo {
 			float: left;
-			margin: 20px 0 0 52px;
+			margin: 16px 0 0 52px;
 			width: 300px;
 		}
 		.b-menu-horiz {
 			float: right;
-			width: 562px;
+			width: 540px;
+			.b-info {
+				height: 45px;
+					.b-info-e-namber {
+						@include namber;
+						color: $link-menu;
+						font-size: 13px;
+						line-height: 60px;
+						margin-right: 12px;
+					}
+					.b-info-e-place {
+						@include place;
+						color: $link-menu;
+						font-size: 13px;
+						line-height: 60px;
+					}
+			}
+			& ul {
+				height: 45px;
+			}
 			& ul li {
 				display: inline-block;
 				padding-right: 20px;
 				& a {
-					line-height: 90px;
+					line-height: 25px;
 					color: $link-menu;
 					@include link_up_text;
 					&:hover {
@@ -113,16 +167,17 @@ body {font-family: sans-serif, Arial;}
 							border-radius: 50%;
 							background: rgba(95, 95, 95, .45) url(../i/e-video-but.png);
 							background-repeat: no-repeat;
-							background-position: center;
+							background-position: center center;
 							transition: 0.3s;
 							@include center-block;
 							cursor: pointer;
+
 							&:hover {
 								width: 199px;
 								height: 199px;
 								background: rgba(95, 95, 95, .45) url(../i/e-video-but-hover.png);
 								background-repeat: no-repeat;
-								background-position: center;
+								background-position: center center;
 								transition: 0.3s;
 							}
 						}
