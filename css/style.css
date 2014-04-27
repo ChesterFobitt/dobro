@@ -63,51 +63,83 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 7, ../sass/style.scss */
+/* line 29, ../sass/style.scss */
+body {
+  font-family: sans-serif, Arial;
+}
+
+/* line 30, ../sass/style.scss */
 .clear {
   clear: both;
 }
 
-/* line 10, ../sass/style.scss */
-.b-wrapp {
+/* line 32, ../sass/style.scss */
+.b-wrapper {
   width: 1200px;
   margin: 0 auto;
 }
-/* line 13, ../sass/style.scss */
-.b-wrapp .b-header {
+/* line 35, ../sass/style.scss */
+.b-wrapper .b-header {
   background: white;
   height: 90px;
 }
-/* line 16, ../sass/style.scss */
-.b-wrapp .b-header .e-logo {
+/* line 38, ../sass/style.scss */
+.b-wrapper .b-header .e-logo {
   float: left;
-  padding-top: 20px;
+  margin: 20px 0 0 52px;
   width: 300px;
 }
-/* line 21, ../sass/style.scss */
-.b-wrapp .b-header .b-menu {
+/* line 43, ../sass/style.scss */
+.b-wrapper .b-header .b-menu-horiz {
   float: right;
-  width: 590px;
+  width: 562px;
 }
-/* line 24, ../sass/style.scss */
-.b-wrapp .b-header .b-menu li {
+/* line 46, ../sass/style.scss */
+.b-wrapper .b-header .b-menu-horiz ul li {
   display: inline-block;
   padding-right: 20px;
 }
-/* line 27, ../sass/style.scss */
-.b-wrapp .b-header .b-menu li a {
+/* line 49, ../sass/style.scss */
+.b-wrapper .b-header .b-menu-horiz ul li a {
   line-height: 90px;
   color: #343434;
+  font-family: sans-serif, Arial;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
-/* line 30, ../sass/style.scss */
-.b-wrapp .b-header .b-menu li a:hover {
+/* line 53, ../sass/style.scss */
+.b-wrapper .b-header .b-menu-horiz ul li a:hover {
   text-decoration: none;
   color: #929292;
 }
-/* line 38, ../sass/style.scss */
-.b-wrapp .b-header .big-head {
-  background: url(../i/big.png);
+/* line 61, ../sass/style.scss */
+.b-wrapper .b-header .b-video {
+  background: url(../i/b-video.png);
   background-position: top center;
   width: 1200px;
   height: 486px;
+  position: relative;
+}
+/* line 67, ../sass/style.scss */
+.b-wrapper .b-header .b-video div {
+  width: 504px;
+  border-bottom: 1px solid #06aded;
+  padding: 45px 0 5px 0;
+  margin: 0 52px;
+}
+/* line 72, ../sass/style.scss */
+.b-wrapper .b-header .b-video div a {
+  font-family: sans-serif, Arial;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #06aded;
+  text-decoration: none;
+}
+/* line 81, ../sass/style.scss */
+.b-wrapper .b-header .b-video h1 {
+  font-size: 52px;
+  color: white;
+  margin-bottom: 20px;
 }
