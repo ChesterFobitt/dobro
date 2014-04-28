@@ -2,6 +2,11 @@
 
 /* ---------- FONT ---------- */ 
 
+
+
+
+
+
 @font-face {    
     font-family:  'OpenSansBold';
     src:  url('opensans-bold.eot');
@@ -22,16 +27,6 @@
          url('opensans-light.svg#OpenSansCondensedLight') format('svg');
     font-weight:  normal;
     font-style:  normal;
-}
-
-
-@font-face {
-    font-family:  'OpenSansItalic';
-    src:  url('opensans-italic.eot');
-    src:  url('opensans-italic.eot?#iefix') format('embedded-opentype'),
-         url('opensans-italic.woff') format('woff'),
-         url('opensans-italic.ttf') format('truetype');
-    font-weight:  normal;
 }
 
 
