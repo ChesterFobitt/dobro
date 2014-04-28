@@ -37,10 +37,14 @@
 
 
 $width_block: 1200px;
+$title: 33px;
+$text: 13.3px;
 $center: 0 auto;
+
 $col-w: #fff;
 $col-bl: #06aded;
 $link-menu: #343434;
+
 
 @mixin height() {
 	height: 100%;
@@ -63,7 +67,7 @@ $link-menu: #343434;
 
 @mixin link_up_text() {
 	font-family: 'OpenSansBold';
-	font-size: 13.3px;
+	font-size: $text;
 	text-transform: uppercase;
 	font-weight: bold;
 }
@@ -119,14 +123,14 @@ body {
 					.b-info-e-namber {
 						@include namber;
 						color: $link-menu;
-						font-size: 13px;
+						font-size: $text;
 						line-height: 60px;
 						margin-right: 12px;
 					}
 					.b-info-e-place {
 						@include place;
 						color: $link-menu;
-						font-size: 13px;
+						font-size: $text;
 						line-height: 60px;
 					}
 			}
@@ -145,7 +149,6 @@ body {
 						color: #929292;
 					}
 				}
-
 			}
 		}
 		.b-video {
@@ -209,13 +212,13 @@ body {
 	}
 	.b-content {
 		padding-bottom: 62px;
-		height: 80%;
+		//height: 80%;
 		.b-type {
 			padding: 45px 0;
 			margin: 0 52px; 
 			& h1 {
 				color: $col-bl;
-				font-size: 33px;
+				font-size: $title;
 			}
 			.i-all-types {
 				overflow: hidden;
@@ -258,12 +261,33 @@ body {
 						& img {
 							@include center-block;
 						}
-
 					}
 				}
 			}
+		}
+		.b-map {
+			width: $width_block;
+			height: 397px;
+			background: #545454 url(../i/map_bg.png);
+			background-position: top center;
+			background-repeat: no-repeat;
+			.b-info {
+				margin: 0 30px;
+				width: 329px;
+				height: 300px;
+				padding: 10px 20px;
+				border-bottom: 3px solid $col-bl;
+				background: $col-w;
+				h1 {
+					font-size: $title;
+					color: $col-bl;
+					margin-bottom: 10px;
+				}
 
-
+			}
+		}
+		.b-news {
+			
 		}
 	}
 
@@ -273,7 +297,7 @@ body {
 		margin: -62px auto 0;
 		border-top: 1px solid #e7e7e7;
 		> p {
-			font-size: 13px; 
+			font-size: $text; 
 			line-height: 70px;
 		}
 
