@@ -118,6 +118,11 @@ body {
 	}
 		.i-header {
 			height: 90px;
+			background: $col-w;
+			width: $width_block;
+			z-index: 1000;
+			box-shadow: 0px 5px 10px -8px;
+			@include trans(0.4s);
 		}
 		.e-logo {
 			float: left;
