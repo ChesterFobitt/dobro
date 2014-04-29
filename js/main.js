@@ -1,25 +1,24 @@
 $(function() {
+			var h = $('.i-header');
+			var l = $('.e-logo');
+			var m = $('.b-menu-horiz');
+			var i = $('.b-info');
+			var im = $('.e-logo a img');
 	$(window).scroll(function() {
 		if(
 			$(this).scrollTop() > 1) {
-			//$('.header-scroll-top').fadeIn(100);
-			$('.i-header').css({'position' : 'fixed', 'top':'0', 'height':'52px', '':''});
-			$('.e-logo').css({'marginTop' : '5px'});
-			$('.e-logo a img').css({'width' : '186px'});
-			$('.b-menu-horiz').css({'marginTop':'12px'})
-			//$('.left-list-menu').css({'position' : 'fixed', 'marginTop':'-110px', 'z-index': '777', 'width' : '223px'});
-			$('.b-info').fadeOut(2);
-
+				h.css({'position' : 'fixed', 'top':'0', 'height':'52px', '':''});
+				l.css({'marginTop' : '5px'});
+				im.css({'width' : '186px'});
+				m.css({'marginTop':'12px'});
+				i.fadeOut(2);
 			 } 
 		else {
-			//$('.header-scroll-top').fadeOut(100);
-			$('.i-header').css({'position' : 'relative', 'marginTop':'0', 'height':'90px'});
-			$('.e-logo').css({'marginTop' : '16px'});
-			$('.e-logo a img').css({'width' : '253px'});
-			$('.b-menu-horiz').css({'marginTop':'0'})
-			//$('.left-list-menu').css({'position' : 'relative', 'marginTop':'5px'});
-			//$('.right-lang-block-scroll').css({'display' : 'none'});
-			$('.b-info').fadeIn(2);
+			h.css({'position' : 'relative', 'marginTop':'0', 'height':'90px'});
+			l.css({'marginTop' : '16px'});
+			im.css({'width' : '253px'});
+			m.css({'marginTop':'0'})
+			i.fadeIn(2);
 
 		}
 	});
