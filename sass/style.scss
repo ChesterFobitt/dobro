@@ -107,6 +107,7 @@ body {
 	.b-header {
 		height: 576px;
 		background: $col-w;
+	}
 		.i-header {
 			height: 90px;
 		}
@@ -134,13 +135,14 @@ body {
 						line-height: 60px;
 					}
 			}
-			& ul {
+			.b-menu-e-list {
 				height: 45px;
 			}
-			& ul li {
+			.e-list-item {
 				display: inline-block;
 				padding-right: 25px;
-				& a {
+			}
+				.e-list-item-link {
 					line-height: 25px;
 					color: $link-menu;
 					@include link_up_text;
@@ -149,21 +151,21 @@ body {
 						color: #929292;
 					}
 				}
-			}
-		}
-	}	
+		}	
 		.b-video {
 			background: url(../i/b-video.png);
 			background-position: top center;
 			width: $width_block;
 			height: 486px;
 			position: relative;
+		}
 			.b-video-e-text {
 				width: 490px;
 				border-bottom:1px solid $col-bl ;
 				padding: 45px 0 5px 0;
 				margin: 0 52px;
-				& a {
+			}
+				.b-video-e-text-link {
 					font-family: sans-serif, Arial;
 					font-size: 16px;
 					text-transform: uppercase;
@@ -171,13 +173,11 @@ body {
 					color: $col-bl;
 					text-decoration: none;
 				}
-			}
-			h1 {
+			.b-video-title {
 				font-size: 52px;
 				color: $col-w;
 				margin-bottom:  20px;
 			}
-		}
 			.b-batton-play {
 				width: 312px;
 				height: 312px;
@@ -245,13 +245,13 @@ body {
 						background-position: top center;
 						background-repeat: no-repeat;
 					}
-					p {
+					.e-type-text {
 						text-align: center;
 						width: 165px;
 						margin: 20px auto 0;
 					}
 
-					p a {
+					.e-type-text-link {
 						color: #929292;
 						@include link_up_text;
 
@@ -260,7 +260,7 @@ body {
 					.e-img-types {
 						height: 151px;
 						position: relative;
-						& img {
+						.e-img-types-img {
 							@include center-block;
 						}
 					}
@@ -280,7 +280,7 @@ body {
 				padding: 10px 22px;
 				border-bottom: 3px solid $col-bl;
 				background: $col-w;
-				h1 {
+				.b-map-title {
 					@extend .e-title;
 					margin: 0 0 10px 0;
 				}
@@ -289,7 +289,7 @@ body {
 		}
 		.b-news {
 			margin: 45px 52px;
-			h1 {
+			.b-news-title {
 				@extend .e-title;
 				margin: 10px 0 25px;
 			}
