@@ -151,6 +151,7 @@ body {
 				}
 			}
 		}
+	}	
 		.b-video {
 			background: url(../i/b-video.png);
 			background-position: top center;
@@ -176,6 +177,7 @@ body {
 				color: $col-w;
 				margin-bottom:  20px;
 			}
+		}
 			.b-batton-play {
 				width: 312px;
 				height: 312px;
@@ -208,15 +210,15 @@ body {
 						}
 				}
 			}
-		}
-	}
 	.b-content {
+		padding-bottom: 62px;
+		//height: 80%;
+	}
 		.e-title {
 			color: $col-bl;
 			font-size: $title;
 		}
-		padding-bottom: 62px;
-		//height: 80%;
+		
 		.b-type {
 			padding: 45px 0;
 			margin: 0 52px; 
@@ -330,8 +332,6 @@ body {
 				}
 			}
 		}
-	}
-
 	.b-footer {
 		width: 1097px;
 		height: 62px; 
