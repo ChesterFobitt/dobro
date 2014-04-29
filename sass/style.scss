@@ -88,6 +88,13 @@ $link-menu: #343434;
 	-moz-transition: $trans;
 	-webkit-transition: $trans;
 }
+@mixin clear() {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
 
 html {
 	@include height;
@@ -97,8 +104,6 @@ body {
 	font-family:  'OpenSansCondensedLight';
 	@include height;
 }
-.clear {clear: both;}
-
 .b-wrapper {
 	width: $width_block;
 	margin: $center;
@@ -107,6 +112,9 @@ body {
 	.b-header {
 		height: 576px;
 		background: $col-w;
+		&:after {
+			@include clear;
+		}
 	}
 		.i-header {
 			height: 90px;
@@ -226,6 +234,9 @@ body {
 				overflow: hidden;
 				height: 260px;
 				margin: 20px auto;
+				&:after {
+					@include clear;
+				}
 
 				.e-item-type {
 					width: 215px;
@@ -294,7 +305,9 @@ body {
 				margin: 10px 0 25px;
 			}
 			.b-some-news {
-				overflow: hidden;
+				&:after {
+					@include clear;
+				}
 				.b-item-news{
 					width: 350px;
 					float: left;
