@@ -118,6 +118,26 @@ body {
 			@include clear;
 		}
 	}
+
+	.fixed-header {
+		.i-header{
+			position: fixed;
+			top: 0;
+			height: 52px;
+		}
+		.e-logo{
+			margin-top: 5px;
+			a img {
+				width: 186px;
+			}
+		}
+		.b-menu-horiz{
+			margin-top: 12px;
+			.b-info {
+				display: none;
+			}
+		}
+	}
 		.i-header {
 			height: 90px;
 			background: $col-w;
