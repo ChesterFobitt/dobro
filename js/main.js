@@ -1,9 +1,9 @@
 $(function() {
-			var h = $('.i-header');
-			var l = $('.e-logo');
-			var m = $('.b-menu-horiz');
-			var i = $('.b-info');
-			var im = $('.e-logo a img');
+			var h = $('.i-header'),
+				l = $('.e-logo'),
+				m = $('.b-menu-horiz'),
+				i = $('.b-info'),
+				im = $('.e-logo a img');
 	$(window).scroll(function() {
 		if(
 			$(this).scrollTop() > 1) {
