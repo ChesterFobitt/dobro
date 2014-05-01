@@ -569,6 +569,12 @@ margin:100px auto 0;
 /*   product end*/
 
 /*   PHOTO VIDEO   */
+.active_left_link_min {
+	color: $col-gr !important;
+	text-decoration: none !important;
+	background: none !important;
+	border-bottom: 1px dotted $col-gr;
+}
 
 .b-content-photo {
 	width: 92%;
